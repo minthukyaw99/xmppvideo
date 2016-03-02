@@ -58,7 +58,8 @@
     self.currentRoomID = roomID;
     self.deviceID = deviceID;
     NSString *eventSourceURL = [NSString stringWithFormat:kEventSourceURL, self.baseURL, roomID, deviceID, nil];
-
+    NSLog(@"Event Source URL >>>>>>>>: %@", eventSourceURL);
+    NSLog(@"Event Source URL EEEEEEEEEEEEEEEEE >>>>>>>>: ");
     self.eventSource = [[EventSource alloc] initWithURL:[NSURL URLWithString:eventSourceURL]
                                                delegate:self];
 }

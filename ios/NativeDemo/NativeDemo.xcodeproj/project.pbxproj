@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB5BE517CFB1888352F71A2E /* libPods-NativeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DEC75C0F284C35831C02F1 /* libPods-NativeDemo.a */; };
-		BE4CDFCE95270AEB079D003D /* libPods-NativeDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC0BC22E89CCF7F6189B62A /* libPods-NativeDemoTests.a */; };
+		68766C9A1C868A6100891C37 /* kXMPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C921C868A6100891C37 /* kXMPP.swift */; };
+		68766C9B1C868A6100891C37 /* OneChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C931C868A6100891C37 /* OneChat.swift */; };
+		68766C9C1C868A6100891C37 /* OneChats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C941C868A6100891C37 /* OneChats.swift */; };
+		68766C9D1C868A6100891C37 /* OneLastActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C951C868A6100891C37 /* OneLastActivity.swift */; };
+		68766C9E1C868A6100891C37 /* OneMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C961C868A6100891C37 /* OneMessage.swift */; };
+		68766C9F1C868A6100891C37 /* OnePresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C971C868A6100891C37 /* OnePresence.swift */; };
+		68766CA01C868A6100891C37 /* OneRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C981C868A6100891C37 /* OneRoom.swift */; };
+		68766CA11C868A6100891C37 /* OneRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C991C868A6100891C37 /* OneRoster.swift */; };
+		687BD04B1C290E700089F971 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BD04A1C290E700089F971 /* TestViewController.swift */; };
+		CAB8CCA2D7D57AA42C1233EA /* libPods-NativeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 453CACFB2BBC6F20798214B1 /* libPods-NativeDemo.a */; };
 		F80B5C291AB393A000A20926 /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B5C281AB393A000A20926 /* EventSource.m */; };
 		F86CB6501ABFF08E00788753 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F86CB64F1ABFF08E00788753 /* Settings.bundle */; };
 		F86CB6531ABFF32D00788753 /* VideoAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CB6521ABFF32D00788753 /* VideoAttributes.m */; };
@@ -43,12 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03DEC75C0F284C35831C02F1 /* libPods-NativeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		065B2B34CF7312D6670A59CA /* Pods-NativeDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemoTests/Pods-NativeDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		45AFDED59A43736D6F93B313 /* Pods-NativeDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemoTests/Pods-NativeDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		6BC0BC22E89CCF7F6189B62A /* libPods-NativeDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2FDE7223506D0C2C58BED66 /* Pods-NativeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F5AF3E7B3485044168CC87D8 /* Pods-NativeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		453CACFB2BBC6F20798214B1 /* libPods-NativeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68766C921C868A6100891C37 /* kXMPP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kXMPP.swift; sourceTree = "<group>"; };
+		68766C931C868A6100891C37 /* OneChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChat.swift; sourceTree = "<group>"; };
+		68766C941C868A6100891C37 /* OneChats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChats.swift; sourceTree = "<group>"; };
+		68766C951C868A6100891C37 /* OneLastActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneLastActivity.swift; sourceTree = "<group>"; };
+		68766C961C868A6100891C37 /* OneMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneMessage.swift; sourceTree = "<group>"; };
+		68766C971C868A6100891C37 /* OnePresence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePresence.swift; sourceTree = "<group>"; };
+		68766C981C868A6100891C37 /* OneRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRoom.swift; sourceTree = "<group>"; };
+		68766C991C868A6100891C37 /* OneRoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRoster.swift; sourceTree = "<group>"; };
+		687BD0491C290E700089F971 /* NativeDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		687BD04A1C290E700089F971 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		6DC8C7D96A36D0648D7BFF66 /* Pods-NativeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9554595DEB05E533629688E4 /* Pods-NativeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F80B5C271AB393A000A20926 /* EventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSource.h; sourceTree = "<group>"; };
 		F80B5C281AB393A000A20926 /* EventSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventSource.m; sourceTree = "<group>"; };
 		F86CB64F1ABFF08E00788753 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -97,7 +112,6 @@
 				F87B9B1D1AB7767A00C02653 /* AssetsLibrary.framework in Frameworks */,
 				F87B9B1E1AB7767A00C02653 /* AudioToolbox.framework in Frameworks */,
 				F87B9B1F1AB7767A00C02653 /* AVFoundation.framework in Frameworks */,
-				BE4CDFCE95270AEB079D003D /* libPods-NativeDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,20 +122,33 @@
 				F87B9B0A1AB772F000C02653 /* libiconv.dylib in Frameworks */,
 				F87B9B0B1AB772F000C02653 /* libresolv.dylib in Frameworks */,
 				F87B9B0C1AB772F000C02653 /* libc++.dylib in Frameworks */,
-				BB5BE517CFB1888352F71A2E /* libPods-NativeDemo.a in Frameworks */,
+				CAB8CCA2D7D57AA42C1233EA /* libPods-NativeDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D250A0D53B589F2535D34BE7 /* Pods */ = {
+		68766C911C868A6100891C37 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A2FDE7223506D0C2C58BED66 /* Pods-NativeDemo.debug.xcconfig */,
-				F5AF3E7B3485044168CC87D8 /* Pods-NativeDemo.release.xcconfig */,
-				065B2B34CF7312D6670A59CA /* Pods-NativeDemoTests.debug.xcconfig */,
-				45AFDED59A43736D6F93B313 /* Pods-NativeDemoTests.release.xcconfig */,
+				68766C921C868A6100891C37 /* kXMPP.swift */,
+				68766C931C868A6100891C37 /* OneChat.swift */,
+				68766C941C868A6100891C37 /* OneChats.swift */,
+				68766C951C868A6100891C37 /* OneLastActivity.swift */,
+				68766C961C868A6100891C37 /* OneMessage.swift */,
+				68766C971C868A6100891C37 /* OnePresence.swift */,
+				68766C981C868A6100891C37 /* OneRoom.swift */,
+				68766C991C868A6100891C37 /* OneRoster.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C2A9F1FA8499AE1A7C52C9B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8C7D96A36D0648D7BFF66 /* Pods-NativeDemo.debug.xcconfig */,
+				9554595DEB05E533629688E4 /* Pods-NativeDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -161,7 +188,7 @@
 				F8B4B0521AB5B48D008D2C4C /* NativeDemoTests */,
 				F8D10DCF1A8B8585000BCA7E /* Products */,
 				F8D10DFF1A8BAB39000BCA7E /* Frameworks */,
-				D250A0D53B589F2535D34BE7 /* Pods */,
+				C2A9F1FA8499AE1A7C52C9B1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +204,7 @@
 		F8D10DD01A8B8585000BCA7E /* NativeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				68766C911C868A6100891C37 /* Classes */,
 				F80B5C261AB3937100A20926 /* Signalling */,
 				F8D10DD51A8B8585000BCA7E /* NativeDemoAppDelegate.h */,
 				F8D10DD61A8B8585000BCA7E /* NativeDemoAppDelegate.m */,
@@ -188,6 +216,8 @@
 				F8D10DDE1A8B8585000BCA7E /* Images.xcassets */,
 				F8D10DE01A8B8585000BCA7E /* LaunchScreen.xib */,
 				F8D10DD11A8B8585000BCA7E /* Supporting Files */,
+				687BD04A1C290E700089F971 /* TestViewController.swift */,
+				687BD0491C290E700089F971 /* NativeDemo-Bridging-Header.h */,
 			);
 			path = NativeDemo;
 			sourceTree = "<group>";
@@ -219,8 +249,7 @@
 				F87B9B071AB772F000C02653 /* libiconv.dylib */,
 				F87B9B081AB772F000C02653 /* libresolv.dylib */,
 				F87B9B091AB772F000C02653 /* libc++.dylib */,
-				03DEC75C0F284C35831C02F1 /* libPods-NativeDemo.a */,
-				6BC0BC22E89CCF7F6189B62A /* libPods-NativeDemoTests.a */,
+				453CACFB2BBC6F20798214B1 /* libPods-NativeDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,11 +261,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8B4B05B1AB5B48D008D2C4C /* Build configuration list for PBXNativeTarget "NativeDemoTests" */;
 			buildPhases = (
-				C2ACC09C8B7D3422D4B50216 /* Check Pods Manifest.lock */,
 				F8B4B04D1AB5B48D008D2C4C /* Sources */,
 				F8B4B04E1AB5B48D008D2C4C /* Frameworks */,
 				F8B4B04F1AB5B48D008D2C4C /* Resources */,
-				B648C85D37E0E8691BF5F5FA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,11 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8D10DF11A8B8585000BCA7E /* Build configuration list for PBXNativeTarget "NativeDemo" */;
 			buildPhases = (
-				D1B68F5B21047527235249D5 /* Check Pods Manifest.lock */,
+				30FFFC714CB8EB4D16E02F80 /* Check Pods Manifest.lock */,
 				F8D10DCA1A8B8585000BCA7E /* Sources */,
 				F8D10DCB1A8B8585000BCA7E /* Frameworks */,
 				F8D10DCC1A8B8585000BCA7E /* Resources */,
-				B76A9FE5E46385ED5013881B /* Copy Pods Resources */,
+				4F72935E435196370A2494E8 /* Embed Pods Frameworks */,
+				6F13804844669226A03EC104 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +301,7 @@
 		F8D10DC61A8B8585000BCA7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Ericsson Research";
 				TargetAttributes = {
@@ -326,22 +355,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B648C85D37E0E8691BF5F5FA /* Copy Pods Resources */ = {
+		30FFFC714CB8EB4D16E02F80 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeDemoTests/Pods-NativeDemoTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B76A9FE5E46385ED5013881B /* Copy Pods Resources */ = {
+		4F72935E435196370A2494E8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F13804844669226A03EC104 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,36 +398,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2ACC09C8B7D3422D4B50216 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D1B68F5B21047527235249D5 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -401,11 +415,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68766C9C1C868A6100891C37 /* OneChats.swift in Sources */,
+				68766C9F1C868A6100891C37 /* OnePresence.swift in Sources */,
+				687BD04B1C290E700089F971 /* TestViewController.swift in Sources */,
 				F86CB6531ABFF32D00788753 /* VideoAttributes.m in Sources */,
+				68766C9D1C868A6100891C37 /* OneLastActivity.swift in Sources */,
 				F8D10DDA1A8B8585000BCA7E /* NativeDemoViewController.m in Sources */,
 				F80B5C291AB393A000A20926 /* EventSource.m in Sources */,
+				68766C9E1C868A6100891C37 /* OneMessage.swift in Sources */,
+				68766C9B1C868A6100891C37 /* OneChat.swift in Sources */,
+				68766CA01C868A6100891C37 /* OneRoom.swift in Sources */,
 				F8D10DD71A8B8585000BCA7E /* NativeDemoAppDelegate.m in Sources */,
+				68766CA11C868A6100891C37 /* OneRoster.swift in Sources */,
 				F8D10DD41A8B8585000BCA7E /* main.m in Sources */,
+				68766C9A1C868A6100891C37 /* kXMPP.swift in Sources */,
 				F8D114681A8C92F4000BCA7E /* PeerServerHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +465,6 @@
 /* Begin XCBuildConfiguration section */
 		F8B4B0591AB5B48D008D2C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 065B2B34CF7312D6670A59CA /* Pods-NativeDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -467,7 +489,6 @@
 		};
 		F8B4B05A1AB5B48D008D2C4C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45AFDED59A43736D6F93B313 /* Pods-NativeDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -525,6 +546,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeDemo/NativeDemo-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -560,6 +582,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeDemo/NativeDemo-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -567,10 +590,11 @@
 		};
 		F8D10DF21A8B8585000BCA7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2FDE7223506D0C2C58BED66 /* Pods-NativeDemo.debug.xcconfig */;
+			baseConfigurationReference = 6DC8C7D96A36D0648D7BFF66 /* Pods-NativeDemo.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -587,16 +611,19 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeDemo/NativeDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "armv7 arm64 armv7s";
 			};
 			name = Debug;
 		};
 		F8D10DF31A8B8585000BCA7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5AF3E7B3485044168CC87D8 /* Pods-NativeDemo.release.xcconfig */;
+			baseConfigurationReference = 9554595DEB05E533629688E4 /* Pods-NativeDemo.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -613,6 +640,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeDemo/NativeDemo-Bridging-Header.h";
 				VALID_ARCHS = "armv7 arm64 armv7s";
 			};
 			name = Release;

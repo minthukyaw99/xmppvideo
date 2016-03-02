@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7rz-jU-cyw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7rz-jU-cyw">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Native OpenWebRTC Demo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="NativeDemoViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TestViewController" customModule="NativeDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +23,6 @@
                                 <subviews>
                                     <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLO-xN-aST" customClass="OpenWebRTCVideoView">
                                         <rect key="frame" x="8" y="8" width="100" height="140"/>
-                                        <animations/>
                                         <color key="backgroundColor" red="0.21176470589999999" green="0.59999999999999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -31,11 +30,9 @@
                                         </connections>
                                     </view>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pAC-L4-6fz" secondAttribute="bottom" constant="8" id="4qp-zH-yJJ"/>
@@ -48,32 +45,28 @@
                         <barButtonItem title="Call" id="meE-Iu-5yq">
                             <color key="tintColor" red="0.42479745369999999" green="0.64265046299999995" blue="0.74085648150000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="callButtonTapped:" destination="BYZ-38-t0r" id="uMx-8Q-Rd4"/>
+                                <action selector="callButtonTapped:" destination="BYZ-38-t0r" id="0CM-3c-gJZ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="NrP-5J-UC8"/>
                         <barButtonItem title="Hang Up" id="c6H-Ie-SZy">
                             <color key="tintColor" red="0.42479745369999999" green="0.64265046299999995" blue="0.74085648150000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="hangupButtonTapped:" destination="BYZ-38-t0r" id="KcB-Wd-RNS"/>
+                                <action selector="hangupButtonTapped:" destination="BYZ-38-t0r" id="K7F-ow-KoB"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Native OpenWebRTC Demo" id="7r3-5r-MrZ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="callButton" destination="meE-Iu-5yq" id="Uch-Wh-swh"/>
-                        <outlet property="hangupButton" destination="c6H-Ie-SZy" id="EHq-fY-jU4"/>
-                        <outlet property="remoteView" destination="pAC-L4-6fz" id="A9U-16-v0j"/>
-                        <outlet property="selfView" destination="WLO-xN-aST" id="FYF-xu-sZy"/>
+                        <outlet property="callButtom" destination="meE-Iu-5yq" id="ecZ-xN-yMR"/>
+                        <outlet property="hangupButtom" destination="c6H-Ie-SZy" id="YzZ-qy-uzQ"/>
+                        <outlet property="remoteView" destination="pAC-L4-6fz" id="UP5-zF-BP5"/>
+                        <outlet property="selfView" destination="WLO-xN-aST" id="5q8-n8-ALb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="8oQ-nz-yVY">
-                    <connections>
-                        <action selector="selfViewTapped:" destination="BYZ-38-t0r" id="mue-Ve-3xZ"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8oQ-nz-yVY"/>
             </objects>
             <point key="canvasLocation" x="1066" y="336"/>
         </scene>
@@ -86,7 +79,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ac-GU-B9I">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="barTintColor" red="0.4247974537037037" green="0.64265046296296291" blue="0.74085648148148153" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

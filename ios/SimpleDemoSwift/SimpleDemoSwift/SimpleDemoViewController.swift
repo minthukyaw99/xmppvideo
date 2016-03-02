@@ -79,7 +79,7 @@ class SimpleDemoViewController: OpenWebRTCViewController {
     }
 
     override func didReceiveMemoryWarning() {
-        println("WARNING! didReceiveMemoryWarning")
+        print("WARNING! didReceiveMemoryWarning")
         super.didReceiveMemoryWarning()
     }
 

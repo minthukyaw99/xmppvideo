@@ -44,7 +44,7 @@ class OpenWebRTCViewController: UIViewController, WKNavigationDelegate, WKScript
     @IBOutlet var browserView:OpenWebRTCWebView?
     var javascriptCode:String? = nil
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
     }
     
@@ -59,26 +59,38 @@ class OpenWebRTCViewController: UIViewController, WKNavigationDelegate, WKScript
         
         let myAudioSession = AVAudioSession.sharedInstance()
         
-        result = myAudioSession.setCategory(AVAudioSessionCategoryPlayAndRecord, error: &theError)
+        do {
+            try myAudioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            result = true
+        } catch var error as NSError {
+            theError = error
+            result = false
+        }
         if !result {
-            println("setCategory failed")
+            print("setCategory failed")
         }
         
-        result = myAudioSession.setActive(true, error: &theError)
+        do {
+            try myAudioSession.setActive(true)
+            result = true
+        } catch var error as NSError {
+            theError = error
+            result = false
+        }
         if !result {
-            println("setActive failed")
+            print("setActive failed")
         }
     }
     
     func loadRequestWithUrl(url:String) {
         _URL = url
-        var request:NSURLRequest? = NSURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
+        let request:NSURLRequest? = NSURLRequest(URL: NSURL(string: url)!, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval: 10)
         browserView?.loadRequest(request!)
         
     }
     
     func userContentController(userContentController:WKUserContentController, didReceiveScriptMessage message:WKScriptMessage) {
-        println("Placeholder: Received message from JavaScript: \(message)")
+        print("Placeholder: Received message from JavaScript: \(message)")
     }
     
     override func viewDidLoad() {
@@ -96,7 +108,7 @@ class OpenWebRTCViewController: UIViewController, WKNavigationDelegate, WKScript
         
         browserView!.owrDelegate = self
         browserView!.navigationDelegate = self
-        var userScript:WKUserScript? = WKUserScript(source: javascriptCode!, injectionTime: WKUserScriptInjectionTime.AtDocumentStart, forMainFrameOnly: true)
+        let userScript:WKUserScript? = WKUserScript(source: javascriptCode!, injectionTime: WKUserScriptInjectionTime.AtDocumentStart, forMainFrameOnly: true)
         browserView?.configuration.userContentController.addUserScript(userScript!)
         browserView?.configuration.userContentController.addScriptMessageHandler(self, name: "owr")
         

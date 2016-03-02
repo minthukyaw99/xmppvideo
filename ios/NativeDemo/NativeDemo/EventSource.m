@@ -52,6 +52,7 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
+    NSLog(@"Did Receive DAta %@", data);
     NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSArray *lines = [string componentsSeparatedByString:@"\n"];
     for (NSString *line in lines) {
