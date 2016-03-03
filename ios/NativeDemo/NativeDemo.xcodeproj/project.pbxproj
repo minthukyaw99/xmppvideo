@@ -16,6 +16,7 @@
 		68766CA01C868A6100891C37 /* OneRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C981C868A6100891C37 /* OneRoom.swift */; };
 		68766CA11C868A6100891C37 /* OneRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68766C991C868A6100891C37 /* OneRoster.swift */; };
 		687BD04B1C290E700089F971 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BD04A1C290E700089F971 /* TestViewController.swift */; };
+		6880177E1C87DB950076DE7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880177D1C87DB950076DE7E /* AppDelegate.swift */; };
 		CAB8CCA2D7D57AA42C1233EA /* libPods-NativeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 453CACFB2BBC6F20798214B1 /* libPods-NativeDemo.a */; };
 		F80B5C291AB393A000A20926 /* EventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B5C281AB393A000A20926 /* EventSource.m */; };
 		F86CB6501ABFF08E00788753 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F86CB64F1ABFF08E00788753 /* Settings.bundle */; };
@@ -31,8 +32,6 @@
 		F87B9B291AB7771A00C02653 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87B9B281AB7771A00C02653 /* VideoToolbox.framework */; };
 		F87B9B2B1AB777AD00C02653 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87B9B2A1AB777AD00C02653 /* CoreMedia.framework */; };
 		F8B4B0561AB5B48D008D2C4C /* NativeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B4B0551AB5B48D008D2C4C /* NativeDemoTests.m */; };
-		F8D10DD41A8B8585000BCA7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D10DD31A8B8585000BCA7E /* main.m */; };
-		F8D10DD71A8B8585000BCA7E /* NativeDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D10DD61A8B8585000BCA7E /* NativeDemoAppDelegate.m */; };
 		F8D10DDA1A8B8585000BCA7E /* NativeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D10DD91A8B8585000BCA7E /* NativeDemoViewController.m */; };
 		F8D10DDD1A8B8585000BCA7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D10DDB1A8B8585000BCA7E /* Main.storyboard */; };
 		F8D10DDF1A8B8585000BCA7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D10DDE1A8B8585000BCA7E /* Images.xcassets */; };
@@ -62,6 +61,8 @@
 		68766C991C868A6100891C37 /* OneRoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRoster.swift; sourceTree = "<group>"; };
 		687BD0491C290E700089F971 /* NativeDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		687BD04A1C290E700089F971 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		6880177C1C87D52D0076DE7E /* NativeDemo-swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeDemo-swift.h"; sourceTree = "<group>"; };
+		6880177D1C87DB950076DE7E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DC8C7D96A36D0648D7BFF66 /* Pods-NativeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9554595DEB05E533629688E4 /* Pods-NativeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeDemo/Pods-NativeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F80B5C271AB393A000A20926 /* EventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSource.h; sourceTree = "<group>"; };
@@ -88,9 +89,6 @@
 		F8B4B0551AB5B48D008D2C4C /* NativeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeDemoTests.m; sourceTree = "<group>"; };
 		F8D10DCE1A8B8585000BCA7E /* NativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D10DD21A8B8585000BCA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8D10DD31A8B8585000BCA7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F8D10DD51A8B8585000BCA7E /* NativeDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeDemoAppDelegate.h; sourceTree = "<group>"; };
-		F8D10DD61A8B8585000BCA7E /* NativeDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeDemoAppDelegate.m; sourceTree = "<group>"; };
 		F8D10DD81A8B8585000BCA7E /* NativeDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeDemoViewController.h; sourceTree = "<group>"; };
 		F8D10DD91A8B8585000BCA7E /* NativeDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeDemoViewController.m; sourceTree = "<group>"; };
 		F8D10DDC1A8B8585000BCA7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -206,8 +204,6 @@
 			children = (
 				68766C911C868A6100891C37 /* Classes */,
 				F80B5C261AB3937100A20926 /* Signalling */,
-				F8D10DD51A8B8585000BCA7E /* NativeDemoAppDelegate.h */,
-				F8D10DD61A8B8585000BCA7E /* NativeDemoAppDelegate.m */,
 				F8D10DD81A8B8585000BCA7E /* NativeDemoViewController.h */,
 				F8D10DD91A8B8585000BCA7E /* NativeDemoViewController.m */,
 				F86CB6511ABFF32D00788753 /* VideoAttributes.h */,
@@ -218,6 +214,8 @@
 				F8D10DD11A8B8585000BCA7E /* Supporting Files */,
 				687BD04A1C290E700089F971 /* TestViewController.swift */,
 				687BD0491C290E700089F971 /* NativeDemo-Bridging-Header.h */,
+				6880177C1C87D52D0076DE7E /* NativeDemo-swift.h */,
+				6880177D1C87DB950076DE7E /* AppDelegate.swift */,
 			);
 			path = NativeDemo;
 			sourceTree = "<group>";
@@ -227,7 +225,6 @@
 			children = (
 				F86CB64F1ABFF08E00788753 /* Settings.bundle */,
 				F8D10DD21A8B8585000BCA7E /* Info.plist */,
-				F8D10DD31A8B8585000BCA7E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -423,11 +420,10 @@
 				F8D10DDA1A8B8585000BCA7E /* NativeDemoViewController.m in Sources */,
 				F80B5C291AB393A000A20926 /* EventSource.m in Sources */,
 				68766C9E1C868A6100891C37 /* OneMessage.swift in Sources */,
+				6880177E1C87DB950076DE7E /* AppDelegate.swift in Sources */,
 				68766C9B1C868A6100891C37 /* OneChat.swift in Sources */,
 				68766CA01C868A6100891C37 /* OneRoom.swift in Sources */,
-				F8D10DD71A8B8585000BCA7E /* NativeDemoAppDelegate.m in Sources */,
 				68766CA11C868A6100891C37 /* OneRoster.swift in Sources */,
-				F8D10DD41A8B8585000BCA7E /* main.m in Sources */,
 				68766C9A1C868A6100891C37 /* kXMPP.swift in Sources */,
 				F8D114681A8C92F4000BCA7E /* PeerServerHandler.m in Sources */,
 			);

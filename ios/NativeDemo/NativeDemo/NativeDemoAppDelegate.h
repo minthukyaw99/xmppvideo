@@ -28,6 +28,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NativeDemo-swift.h"
+
+@class OneChat;
 
 @interface NativeDemoAppDelegate : UIResponder <UIApplicationDelegate>
 

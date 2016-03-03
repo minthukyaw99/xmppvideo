@@ -29,6 +29,7 @@
 
 #import "NativeDemoAppDelegate.h"
 #import <OpenWebRTC-SDK/OpenWebRTC.h>
+#import "NativeDemo-swift.h"
 
 @implementation NativeDemoAppDelegate
 
